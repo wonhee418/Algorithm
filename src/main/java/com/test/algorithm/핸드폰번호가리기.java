@@ -15,10 +15,12 @@ package com.test.algorithm;
 public class 핸드폰번호가리기 {
     public String solution(String phone_number) {
         StringBuilder answer = new StringBuilder (phone_number);
-
+        //문자열에서 내가 표현하고자 하는 자릿수만큼 -해준다.
         for(int i = 0; i < phone_number.length()-4; i++){
+            //0번부터 빼준 자릿수까지 \*로 변경해준다.
             answer.setCharAt(i, '*');
         }
+        //변경한 배열을 다시 String 형태로 변경해준다.
         return answer.toString();
     }
 
