@@ -1,4 +1,4 @@
-package com.test.algorithm;
+package com.test.algorithm.programmers.Level1;
 
 
 /**
